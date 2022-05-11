@@ -1,0 +1,13 @@
+[package]
+name = "pixir"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "0.14.18", features = ["full"] }
+hyper-rustls = "0.23.0"
+rustls = "0.20.4"
+tokio = { version = "1.18.1", features = ["full"] }
+trust-dns-resolver = { version = "0.21.2", features = ["dns-over-https-rustls"] }
